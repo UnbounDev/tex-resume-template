@@ -1,0 +1,5 @@
+
+#ignore build report files
+*.aux
+*.log
+

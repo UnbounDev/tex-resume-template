@@ -1,0 +1,197 @@
+\documentclass[a4paper, oneside, final]{scrartcl}
+ 
+\usepackage{soul}
+\usepackage{scrpage2}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[cm]{fullpage}
+\usepackage{multicol}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage[T1]{fontenc}
+ 
+%define our custom colors 
+\definecolor{blue}{HTML}{384150}
+\definecolor{liteblue}{HTML}{abb4c4}
+\definecolor{orange}{HTML}{c8542e}
+
+%deal with the columns
+\setlength{\parskip}{0pt}
+\setlength{\columnseprule}{0pt}
+\setlength{\columnsep}{30pt}
+\raggedcolumns
+
+%shrink title spacing
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{4pt plus 4pt minus 4pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{4pt plus 4pt minus 4pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{4pt plus 4pt minus 4pt}
+ 
+\titleformat{\section}{\large\bf\scshape\raggedright}{}{0em}{}[\titlerule]
+ 
+\pagestyle{scrheadings}
+ 
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape}
+ 
+ 
+%custom footer
+\cofoot{
+	\so{ {\Large\Letter} email@me.com  \ {\Large\Telefon} +5 555.555.5555 } \\
+	\so{www.mysite.com}
+}
+ 
+\begin{document}
+
+\begin{center}
+ 
+%START title%
+\begin{flushleft}
+    \textcolor{orange}{\textsc{\Huge{\so{First Last Name}}}}
+\end{flushleft}
+%END title%
+
+%\section{\textcolor{blue}{Summary}} 
+    \begin{flushleft}
+
+	%summary/objective
+	\colorbox{liteblue} {
+		\parbox {\columnwidth }{ 
+		Summary or Objective Statement
+	}}
+
+    \end{flushleft}
+
+%Professional Experience Section
+\section{\textcolor{blue}{Professional Experience}} 
+
+    %START highlight section%
+	%hightlight section title
+    \begin{flushleft}
+        \parbox{\textwidth} {
+            \colorbox{LightGrey} {
+                \textsc{\small{Highlight Skill Title}}
+            }
+        } 
+    \end{flushleft}
+
+	%hightlight section description
+    \begin{flushleft}
+        \hspace{2em}
+		Highlight Skill Description
+    \end{flushleft}
+    %END highlight section%
+
+    %BEGIN subskill proficiency assortment%
+	%subskill proficiency category/title
+	\parbox{\textwidth} {
+	    \colorbox{LightGrey} {
+		\textsc{\small{Subskill Proficiency Category/Title}}
+	    }
+	} 
+
+	%subskill proficiency lists
+    \begin{multicols}{2}
+
+		%subskill proficiency list 1
+		\begin{multicols}{2}
+			\begin{flushleft}
+				\textsc{Proficiency Level 1}
+			\end{flushleft}
+			\vspace{12em}
+
+			Skill Title 1, Skill Title 2
+		\end{multicols}
+
+		%subskill proficiency list 2
+		\begin{multicols}{2}
+			\begin{flushleft}
+				\textsc{Proficiency Level 2}
+			\end{flushleft}
+			\vspace{12em}
+
+			Skill Title 1, Skill Title 2
+		\end{multicols}
+
+    \end{multicols}
+    %END skill assortment%
+
+\section{\textcolor{blue}{Employment}} 
+
+
+    %START employment 1%
+	%employment 1 title
+    \begin{flushleft}
+        
+        \parbox{\textwidth} {
+            \colorbox{LightGrey} {
+                \textsc{\small{Company}\tiny{(years)}}
+            }
+        } 
+        
+    \end{flushleft}
+
+	%employment 1 description
+    \begin{flushleft}
+        \hspace{2em}Description/Summary
+
+	%employment 1 achievments list
+    \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+        \item achievment 1
+		\item achievment 2
+    \end{itemize}
+    \end{flushleft}
+    %END hointer%
+
+%Education Section
+\section{\textcolor{blue}{Education}} 
+
+	%Universities List
+    \begin{multicols}{2}
+
+		%Uni 1 title
+        \parbox{\columnwidth} {
+            \colorbox{LightGrey} {
+                \textsc{\small{University 1}}
+            }
+        }
+
+		%Uni 1 degree
+        \begin{flushleft}
+            \small{Degree}: \bf{\textsc{Degree Earned}} \\
+            \small{\bf{Graduated in}} \textsc{\bf{\so{Month, Year}}} \\ 
+        \end{flushleft}
+
+		%Uni 1 achievments
+        \begin{flushleft}
+            \small{Achievements}: 
+        \end{flushleft}
+        \begin{flushleft}
+            \small{\bf{*}} Achievement 1 \\
+            \small{\bf{*}} Achievement 2
+        \end{flushleft}
+
+		%Uni 2 title
+        \parbox{\columnwidth} {
+            \colorbox{LightGrey} {
+                \textsc{\small{University 2}}
+            }
+        }
+
+		%Uni 2 degree
+        \begin{flushleft}
+            \small{Degree}: \bf{\textsc{Degree Earned}} \\
+            \small{\bf{Graduated in}} \textsc{\bf{\so{Month, Year}}} \\ 
+        \end{flushleft}
+
+		%Uni 2 achievments
+        \begin{flushleft}
+            \small{Achievements}: 
+        \end{flushleft}
+        \begin{flushleft}
+            \small{\bf{*}} Achievement 1 \\
+            \small{\bf{*}} Achievement 2
+        \end{flushleft}
+
+    \end{multicols}
+
+\end{center}
+\end{document}
+
