@@ -7,11 +7,11 @@ This is a handy dandy template following the setup that I use for my own resumes
 
 Linux:
 
-		```bash
+```bash
 		git clone https://github.com/ajsnapshots/latex-resume-template.git resume
 		cd resume
 		pdflatex resume.tex
-		```
+```
 
 ##Organization
 
