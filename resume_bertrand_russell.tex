@@ -1,0 +1,223 @@
+\documentclass[a4paper, oneside, final]{scrartcl}
+ 
+\usepackage{soul}
+\usepackage{scrpage2}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[cm]{fullpage}
+\usepackage{multicol}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage[T1]{fontenc}
+ 
+%define our custom colors 
+\definecolor{blue}{HTML}{384150}
+\definecolor{liteblue}{HTML}{abb4c4}
+\definecolor{orange}{HTML}{c8542e}
+
+%deal with the columns
+\setlength{\parskip}{0pt}
+\setlength{\columnseprule}{0pt}
+\setlength{\columnsep}{30pt}
+\raggedcolumns
+
+%shrink title spacing
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{4pt plus 4pt minus 4pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{4pt plus 4pt minus 4pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{4pt plus 4pt minus 4pt}
+ 
+\titleformat{\section}{\large\bf\scshape\raggedright}{}{0em}{}[\titlerule]
+ 
+\pagestyle{scrheadings}
+ 
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape}
+ 
+ 
+%custom footer
+\cofoot{
+	\so{ Penrhyndeudraeth, Wales, United Kingdom } \\
+	\so{ {\Large\Letter} lordrussell@rationality  \ {\Large\Telefon} +5 555.555.5555 } \\
+	\so{www.bertrandrussell.com}
+}
+ 
+\begin{document}
+
+\begin{center}
+ 
+%START title%
+\begin{flushleft}
+    \textcolor{orange}{\textsc{\Huge{\so{Bertrand Russell}}}}
+\end{flushleft}
+%END title%
+
+%\section{\textcolor{blue}{Summary}} 
+    \begin{flushleft}
+
+	%summary/objective
+	\colorbox{liteblue} {
+		\parbox {\columnwidth }{
+			"Three passions, simple but strong, have governed my life: \\
+			the longing for love, the search for knowledge and unbearable pity for the suffering of mankind."
+		}
+	}
+
+    \end{flushleft}
+
+%Professional Experience Section
+\section{\textcolor{blue}{Professional Experience}} 
+
+    %START highlight section%
+	%highlight section title
+    \begin{flushleft}
+        \parbox{\textwidth} {
+            \colorbox{LightGrey} {
+                \textsc{\small{Renowned Author}}
+            }
+        } 
+    \end{flushleft}
+
+	%highlight section description
+    \begin{flushleft}
+        \hspace{2em}
+		Collaborator in the writing of "Principia Mathematica", author of "On Denoting" and "A History of Western Philosophy" among a plethora of other works (a great many of which can be found in "The Collected Papers of Bertrand Russell") have proved literary prowess culminating in the awarding of the Nobel Prize in Literature.
+    \end{flushleft}
+    %END highlight section%
+
+    %BEGIN subskill proficiency assortment%
+	%subskill proficiency category/title
+	\parbox{\textwidth} {
+	    \colorbox{LightGrey} {
+		\textsc{\small{Philosophy and Mathematics}}
+	    }
+	} 
+
+	%subskill proficiency lists
+    \begin{center}
+
+		%subskill proficiency list 1
+		\begin{multicols}{2}
+			\begin{flushleft}
+				\textsc{Unquestionable Master:}
+			\end{flushleft}
+			\vspace{12em}
+
+			Epistemology, Ethics, Logic, Mathematics, Metaphysics, Philosophy of Religion, Philosophy of Science
+		\end{multicols}
+
+		%subskill proficiency list 2
+		%\begin{multicols}{2}
+		%	\begin{flushleft}
+		%		\textsc{Proficiency Level 2}
+		%	\end{flushleft}
+		%	\vspace{12em}
+
+		%	Skill Title 1, Skill Title 2
+		%\end{multicols}
+
+    \end{center}
+    %END skill assortment%
+
+\section{\textcolor{blue}{Career History}} 
+
+
+    %START employment 1%
+	%employment 1 title
+    \begin{flushleft}
+        
+        \parbox{\textwidth} {
+            \colorbox{LightGrey} {
+                \textsc{\small{University Lecturer}\tiny{(many years)}}
+            }
+        } 
+        
+    \end{flushleft}
+
+	%employment 1 description
+    \begin{flushleft}
+        \hspace{2em}
+		Prominent lecturer at the London School of Economics, University of Cambridge, University of Chicago, UCLA, and City College of New York - the latter position terminated due to being found "morally unfit", a court judgment which prompted Albert Einstein to write that "great spirits have always encountered violent opposition from mediocre minds".
+    \end{flushleft}
+
+    %START employment 2%
+	%employment 2 title
+    \begin{flushleft}
+        
+        \parbox{\textwidth} {
+            \colorbox{LightGrey} {
+                \textsc{\small{Founder of Beacon Hill School}\tiny{(1927-1932)}}
+            }
+        } 
+        
+    \end{flushleft}
+
+	%employment 1 description
+    \begin{flushleft}
+        \hspace{2em}
+		Creator of Beacon Hill progressive school in an attempt "...at producing, not listless intellectuals, but young men and women filled with constructive hopefulness, conscious that there are great things to be done in the world, and possessed of the skill required for taking their part."
+    \end{flushleft}
+
+    %START employment 3%
+	%employment 3 title
+    \begin{flushleft}
+        
+        \parbox{\textwidth} {
+            \colorbox{LightGrey} {
+                \textsc{\small{Political Activist}}
+            }
+        } 
+        
+    \end{flushleft}
+
+	%employment 1 description
+    \begin{flushleft}
+        \hspace{2em}
+		A lifetime of activism concerning the global community "based on the evidence of the moment and not on a priori principles and preconceptions" (as worded by Alan Wood).
+    \end{flushleft}
+
+%Education Section
+\section{\textcolor{blue}{Education, Titles \& Honors}} 
+
+	%Universities List
+    \begin{multicols}{2}
+
+		%Uni 1 title
+        \parbox{\columnwidth} {
+            \colorbox{LightGrey} {
+                \textsc{\small{Trinity College, Cambridge}}
+            }
+        }
+
+		%Uni 1 degree
+        \begin{flushleft}
+            \small{Degree}: \bf{\textsc{Mathematics}} \\
+            \small{\bf{Graduated in}} \textsc{\bf{\so{1893}}} \\ 
+        \end{flushleft}
+
+		%Uni 1 achievements
+        \begin{flushleft}
+            \small{Achievements}: 
+        \end{flushleft}
+        \begin{flushleft}
+            \small{\bf{*}} Graduated High Wrangler  \\
+            \small{\bf{*}} Mathematical Tripos Scholarship Recipient
+        \end{flushleft}
+
+		%titles and honors
+        \parbox{\columnwidth} {
+            \colorbox{LightGrey} {
+                \textsc{\small{Titles and Honors}}
+            }
+        }
+
+        \begin{flushleft}
+            \small{\bf{*}} The Honourable Bertrand Arthur William Russell \\
+            \small{\bf{*}} The Right Honourable The Earl Russell \\
+            \small{\bf{*}} De Morgan Medal \\
+            \small{\bf{*}} Nobel Prize in Literature \\
+            \small{\bf{*}} Kalinga Prize
+        \end{flushleft}
+
+    \end{multicols}
+
+\end{center}
+\end{document}
+
